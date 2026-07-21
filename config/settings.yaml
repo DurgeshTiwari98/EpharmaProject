@@ -1,0 +1,29 @@
+project:
+  name: E-Pharma Management System
+  owner: Durgesh Tiwari
+  coordinator: Vaishali Pujari
+  organization: Techmentee
+  phase_coverage: "2026-07-13 to 2026-08-09"
+
+data:
+  seed: 42
+  timezone: Asia/Kolkata
+  raw_dir: data/raw
+  processed_dir: data/processed
+  report_dir: reports
+  model_dir: models
+
+synthetic:
+  start_date: "2025-07-01"
+  end_date: "2026-07-31"
+  patients: 5000
+  doctors: 220
+  pharmacies: 120
+  medicines: 1200
+  orders: 40000
+  appointments: 18000
+
+models:
+  test_days: 45
+  validation_days: 45
+  random_state: 42
