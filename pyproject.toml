@@ -44,6 +44,8 @@ dev = [
 
 [project.scripts]
 epharma-generate-data = "epharma.data.synthetic:main"
+epharma-extract-docx = "epharma.data.docx_extract:main"
+epharma-durgesh-health-report = "epharma.data.durgesh_health:main"
 epharma-preprocess = "epharma.preprocessing.pipeline:main"
 epharma-run-eda = "epharma.eda.reports:main"
 epharma-train-models = "epharma.models.training:main"
