@@ -72,6 +72,163 @@ def load_datasets(dataset_dir: str | Path) -> dict[str, pd.DataFrame]:
     return tables
 
 
+def _write_dashboard(report_dir: Path, outputs: dict[str, pd.DataFrame]) -> Path:
+    kpi = outputs["kpi_summary"].iloc[0].to_dict()
+    top_pharmacies = outputs["pharmacy_performance_summary"].head(10)
+    top_recommendations = outputs["recommendation_summary"].head(10)
+    best_models = outputs["model_performance_summary"].head(10)
+    deployment = outputs["deployment_summary"].iloc[0].to_dict()
+
+    sections = [
+        "<!doctype html>",
+        "<html lang=\"en\">",
+        "<head>",
+        "<meta charset=\"utf-8\">",
+        "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+        "<title>E-Pharma Healthcare Analytics Dashboard</title>",
+        "<style>",
+        "body{font-family:Arial,sans-serif;margin:0;background:#f8fafc;color:#111827}",
+        "main{max-width:1180px;margin:0 auto;padding:28px}",
+        "h1{font-size:28px;margin:0 0 8px}",
+        "h2{font-size:18px;margin:28px 0 12px}",
+        ".muted{color:#4b5563;margin:0 0 20px}",
+        ".grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}",
+        ".metric{background:#fff;border:1px solid #d1d5db;border-radius:8px;padding:14px}",
+        ".metric strong{display:block;font-size:22px;margin-top:4px}",
+        "table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d1d5db}",
+        "th,td{text-align:left;border-bottom:1px solid #e5e7eb;padding:10px;font-size:14px}",
+        "th{background:#eef2f7;font-weight:700}",
+        "</style>",
+        "</head>",
+        "<body><main>",
+        "<h1>E-Pharma Healthcare Analytics Dashboard</h1>",
+        "<p class=\"muted\">Phase 5-10 completion dashboard generated from Durgesh healthcare datasets.</p>",
+        "<section class=\"grid\">",
+        f"<div class=\"metric\">Registered patients<strong>{kpi['total_registered_patients']:,}</strong></div>",
+        f"<div class=\"metric\">Online orders<strong>{kpi['total_online_orders']:,}</strong></div>",
+        f"<div class=\"metric\">Revenue USD<strong>{kpi['total_revenue_usd']:,.0f}</strong></div>",
+        f"<div class=\"metric\">Avg satisfaction<strong>{kpi['avg_customer_satisfaction']:.2f}</strong></div>",
+        f"<div class=\"metric\">Recommendation accuracy<strong>{kpi['avg_recommendation_accuracy']:.2f}%</strong></div>",
+        f"<div class=\"metric\">API availability<strong>{deployment['avg_availability']:.3f}%</strong></div>",
+        "</section>",
+        "<h2>Top Pharmacy Performance</h2>",
+        top_pharmacies.to_html(index=False, border=0),
+        "<h2>Top Medicine Recommendation Pairs</h2>",
+        top_recommendations.to_html(index=False, border=0),
+        "<h2>Model Performance Ranking</h2>",
+        best_models.to_html(index=False, border=0),
+        "</main></body></html>",
+    ]
+    path = report_dir / "dashboard.html"
+    path.write_text("\n".join(sections), encoding="utf-8")
+    return path
+
+
+def _recommendation_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    rec = frame.copy()
+    rec["similarity_score"] = _percent_to_float(rec["similarity_score"])
+    return (
+        rec.groupby(["previous_medicine", "recommended_medicine"], dropna=False)
+        .agg(
+            recommendation_count=("patient_id", "count"),
+            avg_similarity_score=("similarity_score", "mean"),
+        )
+        .reset_index()
+        .sort_values(["recommendation_count", "avg_similarity_score"], ascending=[False, False])
+    )
+
+
+def _patient_behavior_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    features = frame.copy()
+    features["high_risk_flag"] = features["high_risk"].eq("Yes").astype(int)
+    features["chronic_disease_flag"] = features["chronic_disease"].eq("Yes").astype(int)
+    features["age_band"] = pd.cut(
+        features["patient_age"],
+        bins=[0, 29, 44, 59, 200],
+        labels=["0-29", "30-44", "45-59", "60+"],
+        right=True,
+    )
+    return (
+        features.groupby(["age_band", "chronic_disease"], observed=False, dropna=False)
+        .agg(
+            patients=("patient_age", "count"),
+            avg_orders_per_year=("orders_per_year", "mean"),
+            high_risk_rate=("high_risk_flag", "mean"),
+        )
+        .reset_index()
+        .sort_values(["high_risk_rate", "avg_orders_per_year"], ascending=[False, False])
+    )
+
+
+def _pharmacy_performance_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    pharmacy = frame.copy()
+    pharmacy["revenue_per_order"] = pharmacy["revenue"] / pharmacy["orders"].clip(lower=1)
+    return pharmacy.sort_values(["revenue", "customer_rating", "orders"], ascending=[False, False, False])
+
+
+def _inventory_optimization_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    inventory = frame.copy()
+    inventory["expiry_date"] = pd.to_datetime(inventory["expiry_date"], errors="coerce", dayfirst=True)
+    inventory["stock_gap_to_reorder"] = inventory["stock"] - inventory["reorder_level"]
+    inventory["needs_reorder"] = inventory["stock"] <= inventory["reorder_level"]
+    inventory["inventory_action"] = inventory["needs_reorder"].map(
+        {True: "Reorder now", False: "Monitor"}
+    )
+    return inventory.sort_values(["needs_reorder", "stock_gap_to_reorder"], ascending=[False, True])
+
+
+def _feature_engineering_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    features = frame.copy()
+    features["high_risk_flag"] = features["high_risk"].eq("Yes").astype(int)
+    features["chronic_disease_flag"] = features["chronic_disease"].eq("Yes").astype(int)
+    return pd.DataFrame(
+        [
+            {
+                "records": int(len(features)),
+                "avg_patient_age": float(features["patient_age"].mean()),
+                "avg_orders_per_year": float(features["orders_per_year"].mean()),
+                "chronic_disease_rate": float(features["chronic_disease_flag"].mean()),
+                "high_risk_rate": float(features["high_risk_flag"].mean()),
+            }
+        ]
+    )
+
+
+def _api_prediction_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    api = frame.copy()
+    api["confidence"] = _percent_to_float(api["confidence"])
+    return (
+        api.groupby("prediction", dropna=False)
+        .agg(requests=("request_id", "count"), avg_confidence=("confidence", "mean"))
+        .reset_index()
+        .sort_values(["requests", "avg_confidence"], ascending=[False, False])
+    )
+
+
+def _model_performance_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    performance = frame.copy()
+    for column in ["accuracy", "precision", "recall", "f1_score"]:
+        performance[column] = _percent_to_float(performance[column])
+    return performance.sort_values(["f1_score", "accuracy"], ascending=[False, False])
+
+
+def _deployment_summary(frame: pd.DataFrame) -> pd.DataFrame:
+    deployment = frame.copy()
+    deployment["availability"] = _percent_to_float(deployment["availability"])
+    running_rate = deployment["status"].eq("Running").mean()
+    return pd.DataFrame(
+        [
+            {
+                "api_services": int(len(deployment)),
+                "running_services": int(deployment["status"].eq("Running").sum()),
+                "running_rate": float(running_rate),
+                "avg_response_time_ms": float(deployment["avg_response_time_ms"].mean()),
+                "avg_availability": float(deployment["availability"].mean()),
+            }
+        ]
+    )
+
+
 def build_summary_outputs(dataset_dir: str | Path, report_dir: str | Path) -> dict[str, pd.DataFrame]:
     """Build analysis-ready summaries from the phase CSV dataset."""
     tables = load_datasets(dataset_dir)
@@ -133,7 +290,34 @@ def build_summary_outputs(dataset_dir: str | Path, report_dir: str | Path) -> di
                 "total_revenue_usd": float(kpis["revenue_usd"].sum()),
                 "avg_customer_satisfaction": float(kpis["customer_satisfaction"].mean()),
                 "avg_medicine_prediction_accuracy": float(kpis["medicine_prediction_accuracy"].mean()),
+                "avg_readmission_prediction_accuracy": float(kpis["readmission_prediction_accuracy"].mean()),
+                "avg_recommendation_accuracy": float(kpis["recommendation_accuracy"].mean()),
+                "avg_inventory_forecast_accuracy": float(kpis["inventory_forecast_accuracy"].mean()),
             }
+        ]
+    )
+
+    recommendation_summary = _recommendation_summary(tables["recommendation"])
+    patient_behavior_summary = _patient_behavior_summary(tables["feature_engineering"])
+    pharmacy_performance_summary = _pharmacy_performance_summary(tables["pharmacy_analytics"])
+    inventory_optimization_summary = _inventory_optimization_summary(tables["inventory"])
+    feature_engineering_summary = _feature_engineering_summary(tables["feature_engineering"])
+    api_prediction_summary = _api_prediction_summary(tables["api_prediction"])
+    model_performance_summary = _model_performance_summary(tables["model_performance"])
+    deployment_summary = _deployment_summary(tables["production_deployment"])
+
+    final_project_summary = pd.DataFrame(
+        [
+            {"phase": "Phase 1", "deliverable": "Project understanding and data analysis", "status": "Completed"},
+            {"phase": "Phase 2", "deliverable": "Data collection and preprocessing workflow", "status": "Completed"},
+            {"phase": "Phase 3", "deliverable": "EDA summaries and reports", "status": "Completed"},
+            {"phase": "Phase 4", "deliverable": "Predictive model training and evaluation", "status": "Completed"},
+            {"phase": "Phase 5", "deliverable": "Recommendation and healthcare analytics", "status": "Completed"},
+            {"phase": "Phase 6", "deliverable": "Feature engineering and validation summary", "status": "Completed"},
+            {"phase": "Phase 7", "deliverable": "API prediction validation summary", "status": "Completed"},
+            {"phase": "Phase 8", "deliverable": "Model performance evaluation", "status": "Completed"},
+            {"phase": "Phase 9", "deliverable": "Deployment readiness and API operations summary", "status": "Completed"},
+            {"phase": "Phase 10", "deliverable": "Final review and handover summary", "status": "Completed"},
         ]
     )
 
@@ -143,9 +327,19 @@ def build_summary_outputs(dataset_dir: str | Path, report_dir: str | Path) -> di
         "doctor_summary": doctor_summary,
         "inventory_summary": inventory_summary,
         "kpi_summary": kpi_summary,
+        "recommendation_summary": recommendation_summary,
+        "patient_behavior_summary": patient_behavior_summary,
+        "pharmacy_performance_summary": pharmacy_performance_summary,
+        "inventory_optimization_summary": inventory_optimization_summary,
+        "feature_engineering_summary": feature_engineering_summary,
+        "api_prediction_summary": api_prediction_summary,
+        "model_performance_summary": model_performance_summary,
+        "deployment_summary": deployment_summary,
+        "final_project_summary": final_project_summary,
     }
     for name, frame in outputs.items():
         frame.to_csv(output_dir / f"{name}.csv", index=False)
+    _write_dashboard(output_dir, outputs)
     return outputs
 
 

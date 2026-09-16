@@ -1,0 +1,201 @@
+API Service,Status,Avg Response Time (ms),Availability
+Doctor Match API [ap-southeast-1-001],Running,186,99.921%
+Alert API [ap-south-1-002],Running,209,99.947%
+Appointment Prediction API [us-west-2-003],Running,175,99.979%
+Insurance Verify API [us-west-2-004],Running,156,99.935%
+Doctor Match API [eu-west-1-005],Running,94,99.962%
+Analytics API [ap-south-1-006],Running,118,99.937%
+Pharmacy Locator API [ap-southeast-1-007],Running,169,99.917%
+Insurance Verify API [ap-south-1-008],Running,187,99.897%
+Insurance Verify API [us-east-1-009],Running,119,99.89%
+Recommendation API [eu-west-1-010],Degraded,135,99.976%
+Chatbot API [ap-southeast-1-011],Running,130,99.988%
+Recommendation API [us-east-1-012],Running,69,99.931%
+Doctor Match API [us-west-2-013],Running,124,99.895%
+Analytics API [us-west-2-014],Running,95,99.999%
+Chatbot API [eu-west-1-015],Running,136,99.892%
+Doctor Match API [ap-south-1-016],Degraded,208,99.963%
+Patient Prediction API [ap-south-1-017],Running,98,99.979%
+Appointment Prediction API [us-west-2-018],Running,113,99.921%
+Chatbot API [ap-southeast-1-019],Running,179,99.958%
+Pharmacy Locator API [eu-west-1-020],Running,140,99.976%
+Insurance Verify API [ap-south-1-021],Running,175,99.977%
+Patient Prediction API [eu-west-1-022],Running,92,99.896%
+Patient Prediction API [ap-south-1-023],Running,150,99.901%
+Insurance Verify API [ap-south-1-024],Running,163,99.964%
+Chatbot API [eu-west-1-025],Running,65,99.935%
+Patient Prediction API [us-west-2-026],Running,144,99.935%
+Alert API [ap-southeast-1-027],Running,160,99.996%
+Appointment Prediction API [ap-south-1-028],Running,158,99.878%
+Recommendation API [eu-west-1-029],Running,175,99.945%
+Analytics API [us-east-1-030],Running,201,99.876%
+Alert API [ap-south-1-031],Running,110,99.86%
+Insurance Verify API [eu-west-1-032],Running,134,99.948%
+Recommendation API [ap-south-1-033],Running,192,99.852%
+Doctor Match API [ap-south-1-034],Running,88,99.869%
+Insurance Verify API [ap-south-1-035],Running,159,99.992%
+Appointment Prediction API [us-west-2-036],Running,139,99.914%
+Pharmacy Locator API [us-west-2-037],Running,139,99.938%
+Chatbot API [ap-south-1-038],Running,61,99.998%
+Pharmacy Locator API [us-east-1-039],Running,214,99.97%
+Chatbot API [eu-west-1-040],Degraded,185,99.919%
+Alert API [us-east-1-041],Running,133,99.946%
+Pharmacy Locator API [eu-west-1-042],Running,136,99.908%
+Inventory Forecast API [ap-south-1-043],Running,218,99.959%
+Pharmacy Locator API [ap-south-1-044],Degraded,106,99.954%
+Recommendation API [ap-south-1-045],Running,71,99.886%
+Inventory Forecast API [eu-west-1-046],Running,197,99.893%
+Recommendation API [us-west-2-047],Degraded,165,99.998%
+Chatbot API [us-east-1-048],Running,79,99.963%
+Chatbot API [eu-west-1-049],Running,102,99.888%
+Chatbot API [us-east-1-050],Running,78,99.945%
+Pharmacy Locator API [ap-south-1-051],Running,162,99.978%
+Insurance Verify API [us-east-1-052],Running,89,99.956%
+Inventory Forecast API [eu-west-1-053],Running,178,99.922%
+Recommendation API [us-east-1-054],Running,122,99.956%
+Pharmacy Locator API [us-west-2-055],Running,131,99.975%
+Inventory Forecast API [us-east-1-056],Running,105,99.894%
+Chatbot API [ap-south-1-057],Running,62,99.951%
+Inventory Forecast API [ap-south-1-058],Running,115,99.956%
+Chatbot API [us-west-2-059],Running,72,99.975%
+Chatbot API [us-east-1-060],Running,138,99.916%
+Alert API [us-east-1-061],Running,156,99.964%
+Appointment Prediction API [eu-west-1-062],Degraded,111,99.864%
+Insurance Verify API [us-east-1-063],Running,146,99.972%
+Recommendation API [us-west-2-064],Running,84,99.969%
+Inventory Forecast API [us-west-2-065],Running,191,99.866%
+Doctor Match API [eu-west-1-066],Running,108,99.943%
+Chatbot API [ap-south-1-067],Degraded,90,99.885%
+Recommendation API [eu-west-1-068],Running,63,99.91%
+Doctor Match API [us-east-1-069],Running,177,99.883%
+Analytics API [ap-southeast-1-070],Running,77,99.982%
+Insurance Verify API [eu-west-1-071],Running,187,99.996%
+Recommendation API [ap-southeast-1-072],Running,205,99.876%
+Recommendation API [ap-southeast-1-073],Running,159,99.951%
+Inventory Forecast API [eu-west-1-074],Running,141,99.996%
+Pharmacy Locator API [us-east-1-075],Running,215,99.986%
+Pharmacy Locator API [ap-south-1-076],Running,119,99.925%
+Patient Prediction API [us-west-2-077],Running,91,99.896%
+Insurance Verify API [us-west-2-078],Running,75,99.87%
+Pharmacy Locator API [eu-west-1-079],Running,156,99.88%
+Patient Prediction API [us-west-2-080],Degraded,213,99.997%
+Pharmacy Locator API [eu-west-1-081],Running,141,99.946%
+Patient Prediction API [ap-southeast-1-082],Running,166,99.947%
+Analytics API [us-east-1-083],Running,144,99.901%
+Appointment Prediction API [ap-southeast-1-084],Running,123,99.969%
+Appointment Prediction API [ap-southeast-1-085],Running,193,99.898%
+Pharmacy Locator API [us-east-1-086],Running,185,99.86%
+Appointment Prediction API [us-east-1-087],Running,96,99.99%
+Inventory Forecast API [us-east-1-088],Running,200,99.974%
+Appointment Prediction API [us-west-2-089],Running,169,99.958%
+Analytics API [us-west-2-090],Running,122,99.913%
+Alert API [us-west-2-091],Running,207,99.917%
+Appointment Prediction API [eu-west-1-092],Running,183,99.862%
+Doctor Match API [ap-south-1-093],Running,180,99.916%
+Chatbot API [ap-southeast-1-094],Running,99,99.972%
+Pharmacy Locator API [us-east-1-095],Running,169,99.977%
+Analytics API [ap-southeast-1-096],Running,201,99.958%
+Analytics API [ap-south-1-097],Running,176,99.892%
+Chatbot API [ap-southeast-1-098],Running,145,99.87%
+Pharmacy Locator API [us-west-2-099],Running,108,99.851%
+Chatbot API [eu-west-1-100],Running,166,99.99%
+Doctor Match API [ap-south-1-101],Running,210,99.861%
+Patient Prediction API [us-east-1-102],Running,204,99.874%
+Insurance Verify API [eu-west-1-103],Running,149,99.926%
+Pharmacy Locator API [eu-west-1-104],Running,158,99.988%
+Appointment Prediction API [us-west-2-105],Running,152,99.944%
+Patient Prediction API [us-west-2-106],Running,176,99.991%
+Inventory Forecast API [eu-west-1-107],Running,208,99.992%
+Inventory Forecast API [us-east-1-108],Running,83,99.946%
+Insurance Verify API [ap-south-1-109],Running,80,99.927%
+Appointment Prediction API [ap-south-1-110],Running,169,99.888%
+Analytics API [ap-southeast-1-111],Running,157,99.937%
+Insurance Verify API [us-east-1-112],Running,206,99.966%
+Doctor Match API [us-west-2-113],Running,113,99.989%
+Insurance Verify API [eu-west-1-114],Running,103,99.972%
+Patient Prediction API [us-east-1-115],Running,166,99.928%
+Analytics API [ap-south-1-116],Running,155,99.878%
+Inventory Forecast API [us-west-2-117],Running,188,99.991%
+Pharmacy Locator API [ap-southeast-1-118],Running,107,99.88%
+Inventory Forecast API [us-west-2-119],Running,164,99.916%
+Alert API [us-east-1-120],Running,102,99.862%
+Recommendation API [ap-south-1-121],Running,76,99.901%
+Alert API [us-west-2-122],Running,85,99.851%
+Analytics API [us-east-1-123],Running,70,99.864%
+Chatbot API [us-east-1-124],Running,193,99.997%
+Analytics API [ap-south-1-125],Running,146,99.94%
+Doctor Match API [eu-west-1-126],Running,147,99.999%
+Appointment Prediction API [eu-west-1-127],Running,156,99.941%
+Doctor Match API [eu-west-1-128],Running,60,99.918%
+Insurance Verify API [us-west-2-129],Running,91,99.979%
+Analytics API [us-west-2-130],Running,218,99.952%
+Pharmacy Locator API [ap-southeast-1-131],Running,108,99.85%
+Doctor Match API [us-east-1-132],Running,71,99.994%
+Doctor Match API [ap-south-1-133],Running,184,99.91%
+Alert API [us-east-1-134],Running,181,99.997%
+Recommendation API [ap-south-1-135],Running,109,99.956%
+Chatbot API [ap-southeast-1-136],Running,189,99.855%
+Pharmacy Locator API [us-east-1-137],Running,200,99.997%
+Pharmacy Locator API [us-west-2-138],Running,89,99.922%
+Chatbot API [us-west-2-139],Running,103,99.962%
+Recommendation API [us-east-1-140],Running,67,99.874%
+Doctor Match API [ap-south-1-141],Running,116,99.957%
+Pharmacy Locator API [us-east-1-142],Running,196,99.944%
+Pharmacy Locator API [us-east-1-143],Running,145,99.98%
+Alert API [ap-southeast-1-144],Running,147,99.906%
+Insurance Verify API [ap-southeast-1-145],Running,171,99.97%
+Appointment Prediction API [eu-west-1-146],Running,82,99.867%
+Doctor Match API [ap-southeast-1-147],Degraded,89,99.935%
+Inventory Forecast API [eu-west-1-148],Running,207,99.96%
+Analytics API [us-east-1-149],Running,108,99.976%
+Insurance Verify API [eu-west-1-150],Running,92,99.927%
+Alert API [ap-southeast-1-151],Running,161,99.851%
+Pharmacy Locator API [eu-west-1-152],Running,135,99.975%
+Pharmacy Locator API [ap-south-1-153],Running,132,99.872%
+Patient Prediction API [ap-southeast-1-154],Running,188,99.998%
+Recommendation API [eu-west-1-155],Running,206,99.921%
+Appointment Prediction API [ap-south-1-156],Running,156,99.859%
+Doctor Match API [us-west-2-157],Running,113,99.976%
+Appointment Prediction API [us-east-1-158],Degraded,105,99.978%
+Insurance Verify API [eu-west-1-159],Running,100,99.998%
+Chatbot API [ap-south-1-160],Running,181,99.998%
+Insurance Verify API [ap-south-1-161],Running,132,99.892%
+Appointment Prediction API [ap-southeast-1-162],Running,93,99.898%
+Alert API [us-east-1-163],Running,137,99.918%
+Inventory Forecast API [ap-southeast-1-164],Running,183,99.893%
+Inventory Forecast API [us-west-2-165],Running,110,99.96%
+Patient Prediction API [eu-west-1-166],Running,207,99.865%
+Inventory Forecast API [ap-south-1-167],Running,169,99.951%
+Inventory Forecast API [us-east-1-168],Running,181,99.877%
+Patient Prediction API [us-east-1-169],Running,146,99.938%
+Inventory Forecast API [ap-south-1-170],Running,90,99.886%
+Pharmacy Locator API [eu-west-1-171],Running,104,99.947%
+Insurance Verify API [us-east-1-172],Running,157,99.891%
+Pharmacy Locator API [eu-west-1-173],Running,89,99.862%
+Pharmacy Locator API [ap-southeast-1-174],Running,210,99.935%
+Alert API [ap-south-1-175],Running,84,99.968%
+Inventory Forecast API [ap-south-1-176],Running,171,99.894%
+Inventory Forecast API [us-east-1-177],Running,197,99.878%
+Patient Prediction API [ap-south-1-178],Running,197,99.967%
+Chatbot API [ap-south-1-179],Running,209,99.93%
+Recommendation API [us-west-2-180],Running,90,99.877%
+Alert API [us-west-2-181],Running,174,99.969%
+Recommendation API [us-east-1-182],Running,112,99.947%
+Recommendation API [ap-southeast-1-183],Running,68,99.863%
+Recommendation API [ap-southeast-1-184],Running,199,99.876%
+Patient Prediction API [us-west-2-185],Running,192,99.985%
+Analytics API [ap-southeast-1-186],Running,207,99.923%
+Doctor Match API [ap-southeast-1-187],Degraded,150,99.94%
+Chatbot API [us-west-2-188],Running,71,99.885%
+Appointment Prediction API [us-west-2-189],Running,115,99.993%
+Alert API [ap-southeast-1-190],Running,151,99.891%
+Alert API [ap-south-1-191],Running,125,99.889%
+Inventory Forecast API [ap-south-1-192],Running,125,99.951%
+Inventory Forecast API [ap-southeast-1-193],Running,128,99.998%
+Appointment Prediction API [eu-west-1-194],Running,190,99.94%
+Insurance Verify API [us-west-2-195],Running,171,99.906%
+Alert API [us-west-2-196],Running,91,99.929%
+Chatbot API [ap-south-1-197],Running,82,99.904%
+Doctor Match API [eu-west-1-198],Running,117,99.891%
+Recommendation API [ap-south-1-199],Running,116,99.906%
+Recommendation API [us-east-1-200],Running,138,99.938%

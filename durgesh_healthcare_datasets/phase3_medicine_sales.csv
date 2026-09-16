@@ -1,0 +1,201 @@
+Date,Medicine,Category,Units Sold,Revenue (USD)
+01-Jan-2026,Ibuprofen,Pain Relief,193,3910.18
+02-Jan-2026,Rosuvastatin,Cardiology,365,8004.45
+03-Jan-2026,Simvastatin,Cardiology,193,3609.1
+04-Jan-2026,Methimazole,Endocrine,317,8413.18
+05-Jan-2026,Sumatriptan,Neurology,336,3904.32
+06-Jan-2026,Amlodipine,Cardiology,327,3436.77
+07-Jan-2026,Montelukast,Respiratory,123,1327.17
+08-Jan-2026,Ciprofloxacin,General,258,3996.42
+09-Jan-2026,Pantoprazole,Gastro,185,3794.35
+10-Jan-2026,Melatonin,Psychiatry,323,3339.82
+11-Jan-2026,Omeprazole,Gastro,243,2335.23
+12-Jan-2026,Amoxicillin,General,138,1178.52
+13-Jan-2026,Losartan,Cardiology,135,3273.75
+14-Jan-2026,Diclofenac,Pain Relief,204,4157.52
+15-Jan-2026,Sertraline,Psychiatry,161,2566.34
+16-Jan-2026,Naproxen,Pain Relief,316,4284.96
+17-Jan-2026,Methimazole,Endocrine,174,2169.78
+18-Jan-2026,Naproxen,Pain Relief,282,2453.4
+19-Jan-2026,Topiramate,Neurology,181,3400.99
+20-Jan-2026,Naproxen,Pain Relief,279,2262.69
+21-Jan-2026,Fluoxetine,Psychiatry,185,2715.8
+22-Jan-2026,Azithromycin,General,375,3915.0
+23-Jan-2026,Salbutamol,Respiratory,175,2936.5
+24-Jan-2026,Fexofenadine,General,314,3369.22
+25-Jan-2026,Ranitidine,Gastro,350,10913.0
+26-Jan-2026,Loratadine,General,278,6302.26
+27-Jan-2026,Sumatriptan,Neurology,138,2256.3
+28-Jan-2026,Pantoprazole,Gastro,168,4625.04
+29-Jan-2026,Lisinopril,Cardiology,123,2967.99
+30-Jan-2026,Loratadine,General,140,1922.2
+31-Jan-2026,Celecoxib,Pain Relief,173,2934.08
+01-Feb-2026,Ciprofloxacin,General,341,5906.12
+02-Feb-2026,Telmisartan,Cardiology,150,3270.0
+03-Feb-2026,Naproxen,Pain Relief,175,3444.0
+04-Feb-2026,Salbutamol,Respiratory,168,3581.76
+05-Feb-2026,Ranitidine,Gastro,227,2580.99
+06-Feb-2026,Loratadine,General,310,7089.7
+07-Feb-2026,Melatonin,Psychiatry,84,1648.92
+08-Feb-2026,Fexofenadine,General,276,8591.88
+09-Feb-2026,Rizatriptan,Neurology,333,5934.06
+10-Feb-2026,Ranitidine,Gastro,292,7311.68
+11-Feb-2026,Omeprazole,Gastro,330,3963.3
+12-Feb-2026,Simvastatin,Cardiology,95,2574.5
+13-Feb-2026,Fluticasone,Respiratory,229,2010.62
+14-Feb-2026,Fluticasone,Respiratory,355,5300.15
+15-Feb-2026,Pantoprazole,Gastro,369,9527.58
+16-Feb-2026,Ranitidine,Gastro,361,7313.86
+17-Feb-2026,Simvastatin,Cardiology,138,1991.34
+18-Feb-2026,Salbutamol,Respiratory,267,5609.67
+19-Feb-2026,Amoxicillin,General,305,6438.55
+20-Feb-2026,Naproxen,Pain Relief,132,3387.12
+21-Feb-2026,Glipizide,Diabetes,232,6728.0
+22-Feb-2026,Amoxicillin,General,310,4436.1
+23-Feb-2026,Budesonide,Respiratory,304,8746.08
+24-Feb-2026,Celecoxib,Pain Relief,201,2621.04
+25-Feb-2026,Sumatriptan,Neurology,259,7425.53
+26-Feb-2026,Topiramate,Neurology,299,3582.02
+27-Feb-2026,Cetirizine,General,185,5091.2
+28-Feb-2026,Atorvastatin,Cardiology,371,6091.82
+01-Mar-2026,Insulin,Diabetes,355,4274.2
+02-Mar-2026,Levothyroxine,Endocrine,228,4959.0
+03-Mar-2026,Rizatriptan,Neurology,128,1440.0
+04-Mar-2026,Montelukast,Respiratory,110,3500.2
+05-Mar-2026,Cetirizine,General,147,2056.53
+06-Mar-2026,Loratadine,General,206,5413.68
+07-Mar-2026,Methimazole,Endocrine,330,3765.3
+08-Mar-2026,Zolpidem,Psychiatry,217,5006.19
+09-Mar-2026,Metformin XR,Diabetes,311,3050.91
+10-Mar-2026,Budesonide,Respiratory,286,5825.82
+11-Mar-2026,Insulin,Diabetes,268,5067.88
+12-Mar-2026,Ranitidine,Gastro,247,5426.59
+13-Mar-2026,Budesonide,Respiratory,314,7297.36
+14-Mar-2026,Melatonin,Psychiatry,112,3035.2
+15-Mar-2026,Methimazole,Endocrine,191,5966.84
+16-Mar-2026,Fluoxetine,Psychiatry,333,4808.52
+17-Mar-2026,Levothyroxine,Endocrine,252,5327.28
+18-Mar-2026,Cetirizine,General,369,10501.74
+19-Mar-2026,Losartan,Cardiology,104,946.4
+20-Mar-2026,Zolpidem,Psychiatry,315,2642.85
+21-Mar-2026,Diclofenac,Pain Relief,305,5782.8
+22-Mar-2026,Naproxen,Pain Relief,183,5837.7
+23-Mar-2026,Cetirizine,General,234,2765.88
+24-Mar-2026,Insulin,Diabetes,127,3011.17
+25-Mar-2026,Ibuprofen,Pain Relief,122,2064.24
+26-Mar-2026,Diclofenac,Pain Relief,106,1856.06
+27-Mar-2026,Lisinopril,Cardiology,199,3641.7
+28-Mar-2026,Budesonide,Respiratory,128,1027.84
+29-Mar-2026,Paracetamol,General,119,1330.42
+30-Mar-2026,Fluticasone,Respiratory,345,8390.4
+31-Mar-2026,Alprazolam,Psychiatry,84,2073.96
+01-Apr-2026,Celecoxib,Pain Relief,296,7299.36
+02-Apr-2026,Paracetamol,General,116,1564.84
+03-Apr-2026,Budesonide,Respiratory,132,1383.36
+04-Apr-2026,Metformin,Diabetes,233,2630.57
+05-Apr-2026,Cetirizine,General,153,1474.92
+06-Apr-2026,Simvastatin,Cardiology,84,1902.6
+07-Apr-2026,Diclofenac,Pain Relief,305,5011.15
+08-Apr-2026,Fluoxetine,Psychiatry,157,4722.56
+09-Apr-2026,Topiramate,Neurology,306,8763.84
+10-Apr-2026,Budesonide,Respiratory,131,1488.16
+11-Apr-2026,Celecoxib,Pain Relief,276,4537.44
+12-Apr-2026,Naproxen,Pain Relief,241,6504.59
+13-Apr-2026,Glipizide,Diabetes,221,5186.87
+14-Apr-2026,Glipizide,Diabetes,363,8138.46
+15-Apr-2026,Telmisartan,Cardiology,225,6007.5
+16-Apr-2026,Amlodipine,Cardiology,234,3025.62
+17-Apr-2026,Telmisartan,Cardiology,340,4260.2
+18-Apr-2026,Methimazole,Endocrine,231,5430.81
+19-Apr-2026,Glipizide,Diabetes,333,5747.58
+20-Apr-2026,Glipizide,Diabetes,335,7808.85
+21-Apr-2026,Azithromycin,General,350,10265.5
+22-Apr-2026,Alprazolam,Psychiatry,264,8028.24
+23-Apr-2026,Cetirizine,General,278,7967.48
+24-Apr-2026,Simvastatin,Cardiology,295,4947.15
+25-Apr-2026,Escitalopram,Psychiatry,321,9922.11
+26-Apr-2026,Azithromycin,General,88,1944.8
+27-Apr-2026,Alprazolam,Psychiatry,214,2820.52
+28-Apr-2026,Atorvastatin,Cardiology,283,5705.28
+29-Apr-2026,Zolpidem,Psychiatry,336,8873.76
+30-Apr-2026,Naproxen,Pain Relief,285,2844.3
+01-May-2026,Salbutamol,Respiratory,355,8090.45
+02-May-2026,Insulin,Diabetes,122,1883.68
+03-May-2026,Rizatriptan,Neurology,184,5773.92
+04-May-2026,Ciprofloxacin,General,354,5607.36
+05-May-2026,Sumatriptan,Neurology,113,1744.72
+06-May-2026,Naproxen,Pain Relief,202,1896.78
+07-May-2026,Budesonide,Respiratory,302,3255.56
+08-May-2026,Topiramate,Neurology,108,1665.36
+09-May-2026,Escitalopram,Psychiatry,141,1170.3
+10-May-2026,Cetirizine,General,85,1014.05
+11-May-2026,Melatonin,Psychiatry,347,7082.27
+12-May-2026,Ibuprofen,Pain Relief,165,2791.8
+13-May-2026,Insulin,Diabetes,140,3711.4
+14-May-2026,Amlodipine,Cardiology,251,6869.87
+15-May-2026,Insulin,Diabetes,348,3316.44
+16-May-2026,Simvastatin,Cardiology,119,2369.29
+17-May-2026,Rizatriptan,Neurology,264,2463.12
+18-May-2026,Simvastatin,Cardiology,165,2775.3
+19-May-2026,Ibuprofen,Pain Relief,132,3888.72
+20-May-2026,Celecoxib,Pain Relief,196,5052.88
+21-May-2026,Alprazolam,Psychiatry,102,2918.22
+22-May-2026,Alprazolam,Psychiatry,205,1865.5
+23-May-2026,Metformin,Diabetes,276,8304.84
+24-May-2026,Escitalopram,Psychiatry,98,2084.46
+25-May-2026,Montelukast,Respiratory,194,3049.68
+26-May-2026,Montelukast,Respiratory,243,3525.93
+27-May-2026,Azithromycin,General,372,6305.4
+28-May-2026,Rizatriptan,Neurology,106,1303.8
+29-May-2026,Rosuvastatin,Cardiology,103,3182.7
+30-May-2026,Azithromycin,General,318,9152.04
+31-May-2026,Lisinopril,Cardiology,247,2487.29
+01-Jun-2026,Pantoprazole,Gastro,84,1415.4
+02-Jun-2026,Levothyroxine,Endocrine,368,9873.44
+03-Jun-2026,Topiramate,Neurology,204,3902.52
+04-Jun-2026,Sumatriptan,Neurology,332,10607.4
+05-Jun-2026,Fexofenadine,General,359,9423.75
+06-Jun-2026,Glipizide,Diabetes,157,1279.55
+07-Jun-2026,Montelukast,Respiratory,92,1250.28
+08-Jun-2026,Melatonin,Psychiatry,84,2588.88
+09-Jun-2026,Alprazolam,Psychiatry,272,7719.36
+10-Jun-2026,Lisinopril,Cardiology,133,1718.36
+11-Jun-2026,Glipizide,Diabetes,294,5824.14
+12-Jun-2026,Atorvastatin,Cardiology,152,3812.16
+13-Jun-2026,Budesonide,Respiratory,102,3071.22
+14-Jun-2026,Rosuvastatin,Cardiology,291,7222.62
+15-Jun-2026,Metformin,Diabetes,314,9856.46
+16-Jun-2026,Budesonide,Respiratory,377,3879.33
+17-Jun-2026,Cetirizine,General,281,2753.8
+18-Jun-2026,Simvastatin,Cardiology,111,2046.84
+19-Jun-2026,Cetirizine,General,201,3015.0
+20-Jun-2026,Loratadine,General,281,6974.42
+21-Jun-2026,Loratadine,General,242,4566.54
+22-Jun-2026,Fluticasone,Respiratory,118,3616.7
+23-Jun-2026,Cetirizine,General,379,4024.98
+24-Jun-2026,Buspirone,Psychiatry,164,3081.56
+25-Jun-2026,Loratadine,General,288,3139.2
+26-Jun-2026,Melatonin,Psychiatry,186,3506.1
+27-Jun-2026,Pantoprazole,Gastro,215,6118.9
+28-Jun-2026,Budesonide,Respiratory,160,4380.8
+29-Jun-2026,Lisinopril,Cardiology,100,1316.0
+30-Jun-2026,Loratadine,General,155,1579.45
+01-Jul-2026,Glipizide,Diabetes,262,4587.62
+02-Jul-2026,Atorvastatin,Cardiology,233,3317.92
+03-Jul-2026,Escitalopram,Psychiatry,95,2930.75
+04-Jul-2026,Omeprazole,Gastro,364,9445.8
+05-Jul-2026,Glipizide,Diabetes,128,2443.52
+06-Jul-2026,Cetirizine,General,142,1177.18
+07-Jul-2026,Fluticasone,Respiratory,146,1862.96
+08-Jul-2026,Methimazole,Endocrine,270,6606.9
+09-Jul-2026,Budesonide,Respiratory,378,8342.46
+10-Jul-2026,Azithromycin,General,91,2905.63
+11-Jul-2026,Fexofenadine,General,307,8417.94
+12-Jul-2026,Budesonide,Respiratory,249,2724.06
+13-Jul-2026,Pantoprazole,Gastro,105,1263.15
+14-Jul-2026,Simvastatin,Cardiology,301,8343.72
+15-Jul-2026,Methimazole,Endocrine,334,2909.14
+16-Jul-2026,Naproxen,Pain Relief,168,2770.32
+17-Jul-2026,Escitalopram,Psychiatry,220,3238.4
+18-Jul-2026,Ciprofloxacin,General,97,2205.78
+19-Jul-2026,Topiramate,Neurology,205,4823.65

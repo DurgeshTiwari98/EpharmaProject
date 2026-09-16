@@ -1,0 +1,216 @@
+Patient ID,Age,Disease,Medicine,Quantity
+PT1192,35,Arthritis,Naproxen,2
+PT1068,46,Migraine,Naproxen,5
+PT1156,21,Arthritis,Ibuprofen,5
+PT1191,48,Hypertension,Losartan,2
+PT1157,41,Acid Reflux,Omeprazole,
+PT1046,,Arthritis,Ibuprofen,1
+PT1009,49,Depression,Escitalopram,3
+PT1136,30,Insomnia,Zolpidem,1
+PT1086,52,Arthritis,Ibuprofen,2
+PT1061,33,Asthma,Montelukast,5
+PT1058,36,Diabetes,Metformin XR,3
+PT1144,24,Infection,Amoxicillin,1
+PT1006,55,Insomnia,Zolpidem,3
+PT1031,55,Diabetes,Glipizide,1
+PT1125,76,Migraine,Naproxen,5
+PT1083,28,Infection,Ciprofloxacin,1
+PT1130,34,Insomnia,Melatonin,5
+PT1003,71,Depression,Sertraline,3
+PT1128,50,Allergies,Fexofenadine,2
+PT1052,26,Acid Reflux,Omeprazole,3
+PT1171,77,Cold and Flu,Paracetamol,5
+PT1090,54,Depression,Fluoxetine,5
+PT1045,48,Cold and Flu,Cetirizine,3
+PT1122,28,Back Pain,Ibuprofen,1
+PT1154,46,Cholesterol,Simvastatin,3
+PT1122,28,Back Pain,Ibuprofen,1
+PT1055,44,Cold and Flu,Ibuprofen,1
+PT1172,74,Depression,Fluoxetine,5
+PT1078,61,Back Pain,Diclofenac,3
+PT1103,70,Cholesterol,Atorvastatin,4
+PT1015,52,Hypertension,Amlodipine,1
+PT1094,25,Infection,Azithromycin,4
+PT1066,70,Anxiety,Escitalopram,5
+PT1152,25,Anxiety,Alprazolam,2
+PT1178,60,Cholesterol,atorvastatin ,3
+PT1017,38,Cold and Flu,Ibuprofen,1
+PT1016,40,Insomnia,Melatonin,1
+PT1185,48,Acid Reflux,Ranitidine,1
+PT1107,44,Anxiety,Alprazolam,2
+PT1065,35,Migraine,Naproxen,4
+PT1137,37,Allergies,Fexofenadine,
+PT1005,63,Acid Reflux,Pantoprazole,
+PT1108,48,Arthritis,Ibuprofen,4
+PT1029,39,Depression,Escitalopram,2
+PT1196,72,Acid Reflux,Ranitidine,1
+PT1030,18,Arthritis,Ibuprofen,2
+PT1131,79,Infection,Ciprofloxacin,2
+PT1167,64,Thyroid,Levothyroxine,4
+PT1104,54,Back Pain,Naproxen,4
+PT1127,81,Cold and Flu,Ibuprofen,4
+PT1044,63,Allergies,Fexofenadine,2
+PT1012,51,Thyroid,Methimazole,3
+PT1110,71,Depression,Escitalopram,5
+PT1118,66,Allergies,Cetirizine,2
+PT1013,81,Cold and Flu,Paracetamol,
+PT1046,,Arthritis,Ibuprofen,1
+PT1178,60,Cholesterol,atorvastatin ,3
+PT1133,33,Cholesterol,Simvastatin,5
+PT1073,23,Migraine,Rizatriptan,5
+PT1164,47,Anxiety,Buspirone,3
+PT1053,70,Thyroid,Methimazole,3
+PT1197,,Anxiety,Escitalopram,
+PT1025,70,Hypertension,Losartan,2
+PT1119,48,Migraine,Rizatriptan,1
+PT1170,36,Migraine,Rizatriptan,5
+PT1063,51,Back Pain,Diclofenac,
+PT1038,19,Arthritis,Diclofenac,
+PT1071,,Migraine,Topiramate,
+PT1199,31,Infection,Azithromycin,5
+PT1135,,Hypertension,Losartan,5
+PT1041,18,Cold and Flu,Ibuprofen,1
+PT1101,20,Acid Reflux,pantoprazole ,3
+PT1134,47,Diabetes,Glipizide,1
+PT1020,39,Anxiety,Buspirone,4
+PT1087,41,Migraine,Topiramate,5
+PT1121,65,Asthma,Salbutamol,3
+PT1096,78,Diabetes,Metformin,3
+PT1138,45,Depression,Fluoxetine,1
+PT1095,,Asthma,Budesonide,3
+PT1057,60,Back Pain,Diclofenac,4
+PT1200,40,Infection,Ciprofloxacin,1
+PT1140,20,Cold and Flu,Paracetamol,4
+PT1080,52,Back Pain,Diclofenac,5
+PT1043,65,Anxiety,Alprazolam,5
+PT1051,42,Diabetes,metformin ,2
+PT1001,49,Asthma,budesonide ,1
+PT1180,34,Infection,Azithromycin,3
+PT1113,62,Anxiety,Alprazolam,1
+PT1189,,Cold and Flu,Ibuprofen,1
+PT1173,63,Hypertension,Lisinopril,5
+PT1188,,Diabetes,Glipizide,4
+PT1149,45,Depression,Escitalopram,1
+PT1176,,Anxiety,Alprazolam,2
+PT1109,77,Allergies,Fexofenadine,
+PT1081,66,Diabetes,Glipizide,2
+PT1124,38,Depression,Fluoxetine,1
+PT1120,39,Insomnia,Zolpidem,3
+PT1033,26,Thyroid,Levothyroxine,3
+PT1047,43,Cholesterol,Simvastatin,3
+PT1010,47,Cold and Flu,Paracetamol,4
+PT1070,21,Allergies,Fexofenadine,3
+PT1141,44,Migraine,Topiramate,4
+PT1005,63,Acid Reflux,Pantoprazole,
+PT1195,81,Anxiety,Alprazolam,3
+PT1056,45,Depression,Sertraline,1
+PT1148,59,Acid Reflux,Ranitidine,1
+PT1009,49,Depression,Escitalopram,3
+PT1161,32,Allergies,Fexofenadine,2
+PT1162,68,Diabetes,Glipizide,4
+PT1187,74,Cold and Flu,Paracetamol,5
+PT1039,31,Asthma,Salbutamol,5
+PT1035,51,Asthma,Salbutamol,2
+PT1018,32,Insomnia,Zolpidem,3
+PT1117,78,Cholesterol,Rosuvastatin,5
+PT1049,21,Insomnia,Zolpidem,3
+PT1184,41,Cold and Flu,Cetirizine,1
+PT1160,72,Acid Reflux,Ranitidine,4
+PT1067,20,Thyroid,Levothyroxine,4
+PT1074,32,Migraine,Naproxen,2
+PT1032,79,Insomnia,Zolpidem,5
+PT1123,47,Allergies,Fexofenadine,5
+PT1072,50,Depression,Escitalopram,3
+PT1175,42,Acid Reflux,Omeprazole,
+PT1147,,Cholesterol,Atorvastatin,1
+PT1011,45,Thyroid,Methimazole,3
+PT1145,64,Acid Reflux,Ranitidine,5
+PT1050,73,Infection,Ciprofloxacin,4
+PT1106,70,Migraine,Sumatriptan,5
+PT1075,32,Arthritis,Celecoxib,5
+PT1004,,Asthma,Montelukast,3
+PT1198,23,Cholesterol,Atorvastatin,1
+PT1179,37,Hypertension,Telmisartan,4
+PT1081,66,Diabetes,Glipizide,2
+PT1091,32,Thyroid,Methimazole,3
+PT1143,19,Cold and Flu,Ibuprofen,5
+PT1007,55,Back Pain,Naproxen,4
+PT1012,51,Thyroid,Methimazole,3
+PT1105,59,Cold and Flu,Ibuprofen,
+PT1132,46,Back Pain,Naproxen,5
+PT1115,37,Diabetes,Insulin,3
+PT1169,32,Anxiety,Escitalopram,1
+PT1168,68,Infection,Azithromycin,1
+PT1023,25,Hypertension,Losartan,5
+PT1034,71,Acid Reflux,Pantoprazole,5
+PT1027,42,Depression,Sertraline,3
+PT1176,,Anxiety,Alprazolam,2
+PT1181,29,Anxiety,Escitalopram,4
+PT1114,67,Back Pain,Diclofenac,
+PT1079,73,Infection,Ciprofloxacin,1
+PT1002,22,Hypertension,Amlodipine,3
+PT1024,53,Migraine,Topiramate,2
+PT1028,74,Hypertension,Lisinopril,3
+PT1093,75,Arthritis,Celecoxib,3
+PT1082,61,Insomnia,Zolpidem,2
+PT1146,76,Diabetes,Metformin XR,2
+PT1182,80,Migraine,Naproxen,2
+PT1166,71,Hypertension,Amlodipine,1
+PT1040,82,Arthritis,Celecoxib,2
+PT1069,39,Insomnia,Melatonin,4
+PT1165,73,Depression,Sertraline,1
+PT1019,28,Back Pain,Diclofenac,2
+PT1064,74,Infection,Amoxicillin,4
+PT1076,68,Hypertension,Losartan,5
+PT1159,28,Asthma,Montelukast,4
+PT1022,,Cholesterol,Atorvastatin,1
+PT1098,36,Diabetes,Insulin,5
+PT1150,30,Thyroid,Levothyroxine,2
+PT1048,53,Cold and Flu,Ibuprofen,5
+PT1111,35,Arthritis,Celecoxib,4
+PT1097,51,Allergies,Fexofenadine,4
+PT1142,53,Asthma,Budesonide,3
+PT1092,56,Migraine,Topiramate,3
+PT1059,42,Depression,Sertraline,2
+PT1126,55,Diabetes,Glipizide,2
+PT1116,30,Insomnia,Melatonin,5
+PT1070,21,Allergies,Fexofenadine,3
+PT1163,55,Hypertension,Telmisartan,3
+PT1008,65,Migraine,Rizatriptan,4
+PT1084,75,Hypertension,Losartan,2
+PT1140,20,Cold and Flu,Paracetamol,4
+PT1153,24,Acid Reflux,Ranitidine,5
+PT1158,45,Thyroid,Methimazole,4
+PT1155,72,Cold and Flu,Cetirizine,5
+PT1088,55,Cholesterol,Rosuvastatin,5
+PT1072,50,Depression,Escitalopram,3
+PT1060,46,Cold and Flu,Ibuprofen,3
+PT1112,56,Acid Reflux,Pantoprazole,2
+PT1026,24,Diabetes,Glipizide,2
+PT1014,26,Thyroid,Methimazole,5
+PT1089,24,Arthritis,Celecoxib,5
+PT1129,64,Hypertension,Amlodipine,5
+PT1021,57,Allergies,Fexofenadine,3
+PT1186,48,Cold and Flu,Cetirizine,2
+PT1177,38,Cholesterol,Simvastatin,5
+PT1036,76,Acid Reflux,Pantoprazole,4
+PT1190,46,Insomnia,Zolpidem,1
+PT1194,48,Hypertension,Losartan,4
+PT1099,77,Infection,Ciprofloxacin,
+PT1085,65,Anxiety,Escitalopram,5
+PT1139,,Thyroid,Levothyroxine,4
+PT1174,27,Acid Reflux,Ranitidine,4
+PT1100,23,Infection,Ciprofloxacin,
+PT1146,76,Diabetes,Metformin XR,2
+PT1062,,Back Pain,Diclofenac,3
+PT1145,64,Acid Reflux,Ranitidine,5
+PT1042,72,Diabetes,Insulin,2
+PT1077,33,Cold and Flu,Ibuprofen,3
+PT1020,39,Anxiety,Buspirone,4
+PT1102,53,Acid Reflux,Omeprazole,1
+PT1183,22,Insomnia,Melatonin,5
+PT1169,32,Anxiety,Escitalopram,1
+PT1193,18,Diabetes,Insulin,3
+PT1037,26,Cholesterol,Simvastatin,5
+PT1151,29,Hypertension,telmisartan ,5
+PT1054,40,Acid Reflux,Pantoprazole,5
